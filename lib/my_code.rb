@@ -18,3 +18,23 @@ def map_to_no_change(source_array)
   end
   return mapped
 end
+
+def map_to_double(source_array)
+  mapped = []
+  index = 0
+  while index < source_array.length do
+    mapped << (source_array[index] * 2)
+    index += 1
+  end
+  return mapped
+end
+
+def map_to_square(source_array)
+  mapped = []
+  index = 0
+  while index < source_array.length do
+    mapped << (source_array[index] ** 2)
+    index += 1
+  end
+  return mapped
+end
